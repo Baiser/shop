@@ -15,7 +15,7 @@
             <!-- Start header-->
             <div class="row" id="header">
                 <!-- Logo -->
-                <div class="col-xs-2">
+                <div class="col-xs-2" id="logo">
                     <img src="img/logo.png" style = "width: 130%">
                 </div>
                 <!-- Contact -->
@@ -43,21 +43,36 @@
             <!-- End header-->
 
             <!-- Start subheader -->
-            <div class="row" id="menu">
-                <nav class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li id="menu"><a href="#">Магазин</a></li>
-                        <li id="menu"><a href="#">Apple iPhone</a></li>
-                        <li id="menu"><a href="#">Мобильные телефоны</a></li>
-                        <li id="menu"><a href="#">Смартфоны</a></li>
-                        <li id="menu"><a href="#">Аксессуары</a></li>
-                        <li id="menu"><a href="#">DECT</a></li>
-                        <li id="menu"><a href="#">Рации</a></li>
-                        <li id="menu"><a href="#">SIM</a></li>
-                        <li id="menu"><a href="#">Остальное</a></li>
-                        <li id="menu"></li>
-                    </ul>
-                </nav>
+            <div class="row">
+                <div class="btn-group btn-group-justified" id="menu">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button" style="border-left: #f5f5f5">Магазин</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">Apple iPhone</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">Мобильные телефоны</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">Смартфоны</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">Аксессуары</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">DECT</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">Рации</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button">SIM</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" id="menu_button" style="border-right: #f5f5f5">Остальное</button>
+                    </div>
+                </div>
             </div>
             <!-- Carousel -->
             <div class="row">
@@ -67,7 +82,7 @@
                         <li data-target="#mycarousel" data-slide-to="1"></li>
                         <li data-target="#mycarousel" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="carousel_img">
                         <div class="item active">
                             <img class="d-block img-fluid" src="img/tf1.jpg" alt="First slide" style="width:100%">
                         </div>
@@ -92,35 +107,35 @@
             <!-- Thumbnail labels first row-->
             <div class="row" id="thumbnail_label">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
+                    <div class="thumbnail" style="background: #ffffff url(img/XperiaZL.jpg) repeat-y; background-position: 300% 30%;">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            <a href="#" class="btn btn-default" role="button">Button</a></p>
+                            <h3>Xperia ZL</h3>
+                            <p>Lorem ipsum dolor sit</p>
+                            <p>amet conseder</p>
+                            <p></p>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">ПОДРОБНОСТИ</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
+                    <div class="thumbnail" style="background: #ffffff url(img/HTCOneX.jpg) repeat-y; background-position: 95% 0%;">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            <a href="#" class="btn btn-default" role="button">Button</a></p>
+                            <h3>Xperia ZL</h3>
+                            <p>Lorem ipsum dolor sit</p>
+                            <p>amet conseder</p>
+                            <p></p>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">ПОДРОБНОСТИ</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
-                        <img src="..." alt="...">
+                    <div class="thumbnail" style="background: #ffffff url(img/XperiaZL.jpg) repeat-y; background-position: 300% 30%;">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            <a href="#" class="btn btn-default" role="button">Button</a></p>
+                            <h3>Xperia ZL</h3>
+                            <p>Lorem ipsum dolor sit</p>
+                            <p>amet conseder</p>
+                            <p></p>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">ПОДРОБНОСТИ</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +157,7 @@
 
             <!-- Thumbnail labels second row -->
             <div class="row" id="thumbnail_product">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <img src="img/OK.jpg" alt="...">
                         <div class="caption">
@@ -153,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <img src="img/OK.jpg" alt="...">
                         <div class="caption">
@@ -164,7 +179,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="img/OK.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
+                            <a href="#" class="btn btn-default" role="button">Button</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
                     <div class="thumbnail">
                         <img src="img/OK.jpg" alt="...">
                         <div class="caption">
