@@ -37,7 +37,12 @@
 
                 <!-- Basket -->
                 <div class="col-xs-2" id="basket">
-                    Ваша корзина
+                    <button class="btn btn-primary" type="button" id="basket_button">
+                        <span class="badge" id="basket_counter">0</span>
+                    </button>
+                    <span style="float:left; margin-top:10px;">Ваша корзина <p style="color:grey;">0 товаров - 0</p></span>
+                    <button class="btn" type="button" id="basket_close">x</button>
+
                 </div>
             </div>
             <!-- End header-->
@@ -46,7 +51,7 @@
             <div class="row">
                 <div class="btn-group btn-group-justified" id="menu">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default" id="menu_button" style="border-left: #f5f5f5">Магазин</button>
+                        <button type="button" class="btn btn-default" id="menu_button" style="border-left: #f5f5f5;  border-radius: 5px 0 0 5px;">Магазин</button>
                     </div>
                     <div class="btn-group">
                         <button type="button" class="btn btn-default" id="menu_button">Apple iPhone</button>
@@ -70,7 +75,7 @@
                         <button type="button" class="btn btn-default" id="menu_button">SIM</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default" id="menu_button" style="border-right: #f5f5f5">Остальное</button>
+                        <button type="button" class="btn btn-default" id="menu_button" style="border-right: #f5f5f5;  border-radius: 0 5px 5px 0;">Остальное</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +111,7 @@
             <!-- End Carousel-->
             <!-- Thumbnail labels first row-->
             <div class="row" id="thumbnail_label">
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4" style="margin-left: -15px;">
                     <div class="thumbnail" style="background: #ffffff url(img/XperiaZL.jpg) repeat-y; background-position: 300% 30%;">
                         <div class="caption">
                             <h3>Xperia ZL</h3>
@@ -117,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4">
                     <div class="thumbnail" style="background: #ffffff url(img/HTCOneX.jpg) repeat-y; background-position: 95% 0%;">
                         <div class="caption">
                             <h3>HTC One X</h3>
@@ -128,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-md-4" style="padding-left:0px; padding-right:0px; float:right;">
                     <div class="thumbnail" style="background: #ffffff url(img/Nexus4.jpg) repeat-y; background-position: 110% 0%;">
                         <div class="caption">
                             <h3>Nexus 4</h3>
@@ -143,63 +148,75 @@
             <!-- Thumbnail labels first row end-->
 
             <!-- Novelties navbar -->
-            <nav class="navbar navbar-default" id="menu">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <span style="font-size: 16px; font-color: black; font-weight:400;">Новинки товаров</span>
+            <div class="row">
+                <nav class="navbar navbar-default" id="menu">
+                    <div class="container-fluid">
+                        <div class="navbar-brand">
+                            <span style="font-size: 16px; color: black; font-weight:400;">Новинки товаров</span>
+                        </div>
+                        <form class="navbar-form navbar-right">
+                            <button type="submit" class="btn btn-default" style="background: #efefef">Еще &#187;</button>
+                        </form>
                     </div>
-                    <form class="navbar-form navbar-right">
-                        <button type="submit" class="btn btn-default">Еще &#187;</button>
-                    </form>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <!-- Novelties navbar end-->
 
             <!-- Thumbnail labels second row -->
             <div class="row" id="thumbnail_product">
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <img src="img/Spark.jpg" alt="..." id="thumbnail_img">
-                        <div class="caption">
-                            <h4>Смартфон Highscreen Spark</h4>
+                <div class="col-md-3">
+                    <div class="thumbnail" style="margin-left: -15px;">
+                        <img src="img/Spark.jpg" alt="..." id="thumbnail_img" >
+                        <div class="caption" id="novelties">
+                            <h5>Смартфон Highscreen Spark</h5>
+                            <p></p>
                             <p>Смартфон Highscreen Spark </p>
                             <p>представляет собой довольно</p>
-                            <h3>$170.00</h3>
-                            <p><a href="#" class="btn btn-primary" role="button">В КОРЗИНУ</a>
-                            <a href="#" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+                            <h4>$170.00</h4>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">В КОРЗИНУ</a>
+                            <a href="#" class="btn btn-default" role="button" id="info_button">ПОДРОБНЕЕ</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-md-3">
                     <div class="thumbnail">
                         <img src="img/Infinity2.jpg" alt="..." id="thumbnail_img">
-                        <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">В КОРЗИНУ</a>
-                            <a href="#" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+                        <div class="caption" id="novelties">
+                            <h5>Explay Infinity II (черный)</h5>
+                            <p></p>
+                            <p>Мобильный телефон с поддержкой двух</p>
+                            <p>сим-карт Explay Infinity II представляет</p>
+                            <h4>$250.00</h4>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">В КОРЗИНУ</a>
+                            <a href="#" class="btn btn-default" role="button" id="info_button">ПОДРОБНЕЕ</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-md-3">
                     <div class="thumbnail">
                         <img src="img/5m.jpg" alt="..."  id="thumbnail_img">
-                        <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">В КОРЗИНУ</a>
-                            <a href="#" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+                        <div class="caption" id="novelties">
+                            <h5>Mediagadget Premium для</h5>
+                            <p></p>
+                            <p>Защитная пленка Mediagadget PREMIUM</p>
+                            <p>для IPhone5 - это росто в</p>
+                            <h4>$10.00</h4>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">В КОРЗИНУ</a>
+                            <a href="#" class="btn btn-default" role="button" id="info_button">ПОДРОБНЕЕ</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-md-3" style="padding-right:0px; float: right;">
                     <div class="thumbnail">
                         <img src="img/HTCOneX16GbGrey.jpg" alt="..." id="thumbnail_img">
-                        <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">В КОРЗИНУ</a>
-                            <a href="#" class="btn btn-default" role="button">ПОДРОБНЕЕ</a></p>
+                        <div class="caption" id="novelties">
+                            <h5>HTC One X 16Gb (серый)</h5>
+                            <p></p>
+                            <p>HTC One X с диагональю экрана 4,7</p>
+                            <p>дюйма - отличный выбор для тех, кто</p>
+                            <h4>$430.00</h4>
+                            <p><a href="#" class="btn btn-primary" role="button" id="button_thumbnail">В КОРЗИНУ</a>
+                            <a href="#" class="btn btn-default" role="button" id="info_button">ПОДРОБНЕЕ</a></p>
                         </div>
                     </div>
                 </div>
