@@ -60,6 +60,7 @@ body    {
         box-shadow: 0px 8px 8px -8px rgba(100,100,100,0.8);
         margin-bottom: 30px;
         margin-top:10px;
+        background: linear-gradient(to top, #cfcfcf, #efefef);
 
 }
 
@@ -88,5 +89,9 @@ body    {
 }
 
 .thumbnail{
-        padding: 15px;
+        padding: 10px;
+}
+
+#thumbnail_img{
+        height:250px;
 }
